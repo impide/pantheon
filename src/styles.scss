@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: "Greek";
+    src: url("./assets/font/GreekHouse_Symbolized_Free.ttf") format("ttf");
+}
+
+h1 {
+    font-family: 'GreekHouseSymbolized';
+}
+
+p {
+    font-family: 'Inter';
+}
