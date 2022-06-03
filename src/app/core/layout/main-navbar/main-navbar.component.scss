@@ -1,0 +1,19 @@
+// Main Navbar
+.container-navbar {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+
+    // Brand
+    .brand img {
+        width: 195px;
+    }
+
+    // Register
+    .register button {
+        width: 140px;
+        border-radius: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
