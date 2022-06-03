@@ -1,0 +1,110 @@
+// Welcome Page
+.main-page {
+    overflow-x: hidden;
+
+    // Background
+    .background-proportion {
+        position: relative;
+        height: calc(100vh - 48.43px);
+    }
+
+    .background-first-image {
+        background: center / cover no-repeat url(../../../assets/img/main-page/angel_background.png);
+    }
+
+    .background-second-image {
+        background: center / cover no-repeat url(../../../assets/img/main-page/pantheon_background.png);
+    }
+
+    .background-third-image {
+        background: linear-gradient(180deg, #2C3531 0%, #116466 52.4%, #2C3531 100%);
+    }
+
+    .background-fourth-image {
+        background: center / cover no-repeat url(../../../assets/img/main-page/location_background.png);
+    }
+
+    // Title
+    .title-main-page {
+        position: absolute;
+        top: 4rem;
+    }
+
+    .title-main-page-left,
+    .description-main-page-left {
+        left: 2.5em;
+    }
+
+    .title-main-page-right {
+        right: 2.5em;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 74px;
+    }
+
+    .title-main-page h1:nth-child(1) {
+        text-decoration: underline;
+    }
+
+    .title-main-page h1:nth-of-type(2) {
+        position: relative;
+        top: -1.75rem;
+        text-decoration: overline;
+    }
+
+    .title-main-page-left h1:nth-of-type(2) {
+        left: 4em;
+    }
+
+    .title-main-page-right h1:nth-of-type(2) {
+        right: 4em;
+    }
+
+    // Description
+    .description-main-page {
+        position: absolute;
+        top: 16em;
+    }
+    .description-main-page-right {
+        right: 9em;
+    }
+    .description-main-page-left {
+        p {
+            text-align: left;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: right;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    // Masteries (For 3th Page Only)
+    .masteries-main-page {
+        position: absolute;
+        bottom: 1.5em;
+
+        ul {list-style: none;}
+    }
+
+    // Image
+    .image-main-page {
+        position: absolute;
+        right: 0;
+        bottom: 3em;
+    }
+
+    // Divider
+    .divider {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}

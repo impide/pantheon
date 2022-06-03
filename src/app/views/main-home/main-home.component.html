@@ -1,0 +1,31 @@
+<!-- Main-Page -->
+<div class="main-page">
+    <!-- Background -->
+    <div class="background-proportion {{page.backgroundClass}} w-100" *ngFor="let page of pagesLists; let i = index">
+        <!-- Title -->
+        <div class="title-main-page {{page.orientationTitleClass}}" [ngClass]="{'text-white': i !== 0}" *ngIf="page.title[0]">
+            <h1>{{page.title[1]}}</h1>
+            <h1>{{page.title[2]}}</h1>
+        </div>
+        <!-- Description -->
+        <div class="description-main-page {{page.orientationDescClass[0]}} col-12" *ngIf="page.description[0]">
+            <p class="col-5 {{ page.orientationDescClass[1] }}">{{page.description[1]}}</p>
+        </div>
+        <!-- Masteries (For 3th Page Only) -->
+        <div class="masteries-main-page" *ngIf="page.additionnalElements">
+            <ul class="d-flex">
+                <li *ngFor="let masterie of masteries">
+                    <img class="w-100 h-100" [src]="masterie.path" alt="">
+                </li>
+            </ul>
+        </div>
+        <!-- Additionnal Image -->
+        <div class="image-main-page" *ngIf="page.additionnalImageBackground?.[0]">
+            <img class="w-100 h-100" [src]="page.additionnalImageBackground?.[1]" alt="Avatar_Background">
+        </div>
+        <!-- Divider -->
+        <div class="divider" *ngIf="page.divider">
+            <img class="w-100 h-100" src="../../../assets/img/main-page/divider.svg" alt="Divider">
+        </div>
+    </div>
+</div>
