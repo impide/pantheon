@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "GreekHouseSymbolized";
+    src: url("../../../assets/font/GreekHouse_Symbolized_Free.ttf") format("ttf")
+}
+
+.main-background {
+    background: linear-gradient(180deg, #2C3531 0%, #116466 52.4%, #2C3531 100%);
+    font-family: "GreekHouseSymbolized", sans-serif;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.background-cover {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(../../../assets/img/main-profile/background-cover.png);
+    background-size: cover;
+    background-position: center;
+
+    .current-pseudo {
+        font-size: 40px;
+        color: #fff;
+        padding: 1rem 0 0 1.5rem;
+    }
+
+    .avatar {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        img {
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .sections_options {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 0 2rem;
+
+        ul {
+            list-style: none;
+            margin-bottom: 0;
+
+            li {
+                cursor: pointer;
+            }
+        }
+
+        .sections {
+            font-size: 30px;
+        }
+
+        .sections ul li:nth-child(2) {
+            margin: 0 40px;
+        }
+
+        .options button {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: none;
+        }
+
+        .options ul li:nth-child(1) {
+            margin-right: 40px;
+        }
+
+        .options li i {
+            font-size: 55px;
+        }
+    }
+}
+
+// Cards
+.cards .card_item {
+    position: relative;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.cards .card_item img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.cards .card_item .text-content {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 1rem;
+    bottom: 1rem;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.cards .card_item .text-content:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.cards .card_item .bi-x-circle-fill {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}

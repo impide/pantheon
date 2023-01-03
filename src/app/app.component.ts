@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+
+import { CardFeatureStoreActions } from './core/store/profil-cards-store';
+import { CardFeatureStoreState } from './core/store/profil-cards-store';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +12,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pantheon-project';
 
-  constructor() {}
+  constructor(private store: Store<CardFeatureStoreState.State>) {
+    this.store.dispatch(new CardFeatureStoreActions.GetCards())
+  }
 }

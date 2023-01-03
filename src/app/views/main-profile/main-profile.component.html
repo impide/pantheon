@@ -1,0 +1,49 @@
+<div class="container-fluid main-background p-0">
+    <div class="row w-100 justify-content-center mx-0">
+        <!-- Current User-Profile -->
+        <div class="background-cover">
+            <!-- Profile -->
+            <div class="current-pseudo">
+                pseudo
+            </div>
+            <div class="avatar mx-auto">
+                <img class="w-100 h-100" src="https://i.imgur.com/nyYBwIJ.jpg" alt="Avatar">
+            </div>
+            <!-- Sections & Options -->
+            <div class="sections_options d-flex justify-content-between align-items-center">
+                <div class="sections">
+                    <ul class="d-flex p-0">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div>
+                <div class="options">
+                    <ul class="d-flex align-items-center p-0">
+                        <li><button></button></li>
+                        <li>
+                            <i class="bi bi-plus-circle" (click)="onCreatePost()"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Divider -->
+        <img class="p-0" src="../../../assets/img/main-page/divider.svg" alt="Divider">
+        <!-- Cards -->
+        <div class="row w-100 px-0">
+            <div class="col-12 px-0">
+                <ngx-masonry class="cards w-100" [ordered]="true">
+                    <div class="card_item col-4" ngxMasonryItem *ngFor="let contents of (cards$ | async)">
+                        <img class="w-100 h-100" [src]="contents.path">
+                        <div class="text-content d-flex justify-content-center align-items-center"
+                            *ngIf="contents.content[0]">
+                            <h3>{{contents.content[1]}}</h3>
+                        </div>
+                        <i class="bi bi-x-circle-fill" (click)="onDeletePost(contents._id)"></i>
+                    </div>
+                </ngx-masonry>
+            </div>
+        </div>
+    </div>
+</div>
