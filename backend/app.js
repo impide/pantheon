@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 // Connect to MongoDb
 mongoose
   .connect(
-    "mongodb+srv://Tony:Dln130113@cluster0.ydtveqk.mongodb.net/"
+    "hidden"
   )
   .then(() => {
     console.log("Connected to database!");
